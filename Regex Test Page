@@ -1,0 +1,75 @@
+This page contains example data formats for regex testing, as well as incorrect formats for false positive testing.
+
+------------------------------------
+Social Security Numbers (SSNs)
+
+Format 1:
+123-44-5566
+
+False Positive 1 (extra digits):
+1234-44-55667
+
+False Positive 2 (includes letter):
+234a-44-5566
+
+------------------------------------
+Credit Card Numbers (CCNs)
+
+Format 1:
+1111 2222 3333 4444
+
+Format 2:
+1111-2222-3333-4444
+
+False Positive Format 1 (extra digit):
+12222-3333-4444-5555
+
+False Positive Format 2 (includes letter):
+1111 2222 3a33 4444
+
+------------------------------------
+Phone Numbers
+
+Format 1:
+(123) 444-5566
+
+Format 2:
+(123) 444 5566
+ 
+Format 3:
+123-444-5566
+
+False Positive Format 1 (missing digits):
+(123) 44-556
+
+False Positive Format 2 (extra digit, extra hyphen):
+123-444-5566-1
+
+------------------------------------
+Email Addresses
+
+Format 1:
+john.smith@test.com
+
+Format 2:
+john_smith@beta.test.com
+
+Format 3:
+johnsmith55@test.us
+
+False Positive Format 1 (extra period):
+john..smith@test.com
+
+False Positive Format 2 (missing @):
+john.test.com
+
+False Positive Format 3 (double @):
+john@smith@test.com
+
+------------------------------------
+
+------------------------------------
+
+------------------------------------
+
+------------------------------------
