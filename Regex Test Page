@@ -6,6 +6,9 @@ Social Security Numbers (SSNs)
 Format 1:
 123-44-5566
 
+Format 2 (space in front and behind):
+ 123-88-5566 
+
 False Positive 1 (extra digits):
 1234-44-55667
 
@@ -19,13 +22,19 @@ Format 1:
 1111 2222 3333 4444
 
 Format 2:
-1111-2222-3333-4444
+1111-2222-3333-6666
+
+Format 3 (space in front and behind):
+ 1111-2222-3333-7777 
 
 False Positive Format 1 (extra digit):
-12222-3333-4444-5555
+12222-3333-4444-3333
 
 False Positive Format 2 (includes letter):
-1111 2222 3a33 4444
+1111 2222 3a33 8888
+
+False Positive Format 3 (includes symbol):
+1111 22#2 3333 9999
 
 ------------------------------------
 Phone Numbers
@@ -34,16 +43,19 @@ Format 1:
 (123) 444-5566
 
 Format 2:
-(123) 444 5566
+(123) 444 5577
  
 Format 3:
-123-444-5566
+123-444-5588
+
+Format 4 (space in front and behind):
+ (123) 444 5577 
 
 False Positive Format 1 (missing digits):
-(123) 44-556
+(123) 44-552
 
-False Positive Format 2 (extra digit, extra hyphen):
-123-444-5566-1
+False Positive Format 2 (extra hyphen and digit):
+123-444-5566-9
 
 ------------------------------------
 Email Addresses
@@ -57,8 +69,11 @@ john_smith@beta.test.com
 Format 3:
 johnsmith55@test.us
 
-False Positive Format 1 (extra period):
-john..smith@test.com
+Format 4 (space in front and behind):
+ johnsmith66@test.us 
+
+False Positive Format 1 (incorrect spacing
+john.smith @test .com
 
 False Positive Format 2 (missing @):
 john.test.com
@@ -67,9 +82,56 @@ False Positive Format 3 (double @):
 john@smith@test.com
 
 ------------------------------------
+Interesting Strings
+
+user
+user=
+user=test22
+
+id
+id=
+id=test22
+
+userid
+userid=
+userid=test22
+
+password
+password=
+password=test22
+
+token
+token=
+token=test22
+
+secret
+secret=
+secret=test22
+
+cookie
+cookie=
+cookie=test22
+
+api
+api=
+api=test22
+
+key
+key=
+key=test22
+
+apikey
+apikey=
+apikey=test22
+
+session
+session=
+session=test22
+
+sessionid
+sessionid=
+sessionid=test22
 
 ------------------------------------
-
 ------------------------------------
-
 ------------------------------------
