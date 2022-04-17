@@ -13,7 +13,7 @@ False Positive 1 (extra digits):
 1234-44-55667
 
 False Positive 2 (includes letter):
-234a-44-5566
+23a-44-5566
 
 ------------------------------------
 Credit Card Numbers (CCNs)
@@ -44,18 +44,24 @@ Format 1:
 
 Format 2:
 (123) 444 5577
- 
-Format 3:
+
+Format 3 (space in front and behind):
+ (123) 444 5577 
+
+Format 4 (hyphen separators):
 123-444-5588
 
-Format 4 (space in front and behind):
- (123) 444 5577 
+Format 5 (period separators):
+123.444.5599
 
 False Positive Format 1 (missing digits):
 (123) 44-552
 
 False Positive Format 2 (extra hyphen and digit):
 123-444-5566-9
+
+False Positive Format 3 (extra period and digit):
+123.444.5566.9
 
 ------------------------------------
 Email Addresses
