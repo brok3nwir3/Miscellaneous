@@ -73,9 +73,12 @@ Format 2:
 john_smith@beta.test.com
 
 Format 3:
+john-smith44@test.us
+
+Format 4:
 johnsmith55@test.us
 
-Format 4 (space in front and behind):
+Format 5 (space in front and behind):
  johnsmith66@test.us 
 
 False Positive Format 1 (incorrect spacing
