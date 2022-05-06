@@ -87,9 +87,6 @@ john.smith @test .com
 False Positive Format 2 (missing @):
 john.test.com
 
-False Positive Format 3 (invalid $ character):
-john@smith$test.com
-
 ------------------------------------
 Interesting Strings
 
