@@ -1,0 +1,17 @@
+Screen Notes
+
+Create a new screen:
+screen -S screenName
+
+Detach from a screen:
+CTRL+A+D
+
+Re-attach to a screen:
+screen -R screenName
+
+List running screens:
+ls -laR /var/run/screen/
+
+Screens on this server...
+1) discord1 = general bot
+2) discord2 = news bot
