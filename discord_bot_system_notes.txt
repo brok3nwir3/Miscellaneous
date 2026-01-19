@@ -1,4 +1,4 @@
-Linux System Notes
+Linux Service Notes
 
 These steps allow you to auto-start the discord bot/s when the system launches.
 
