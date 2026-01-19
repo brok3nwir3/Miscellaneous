@@ -15,3 +15,7 @@ ls -laR /var/run/screen/
 Screens on this server...
 1) discord1 = general bot
 2) discord2 = news bot
+
+
+NOTE:
+When using system files, instead of manual screens, user this command to check bot statuses: journalctl -u discord-general -f
