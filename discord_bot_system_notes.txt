@@ -1,0 +1,17 @@
+Linux System Notes
+
+When using system files, instead of manual screens, user this command to check bot statuses:
+journalctl -u discord-general -f
+
+Create two services files:
+sudo nano /etc/systemd/system/discord-news.service
+sudo nano /etc/systemd/system/discord-general.service
+
+Note, the contents of the two files can be found in this GitHub directory.
+
+Run these commands to start your two bot services:
+sudo systemctl daemon-reload
+sudo systemctl enable discord-general
+sudo systemctl enable discord-news
+sudo systemctl start discord-general
+sudo systemctl start discord-news
