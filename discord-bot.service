@@ -1,0 +1,19 @@
+[Unit]
+Description=My Discord Bot
+After=network.target
+
+[Service]
+
+# Replace 'ubuntu' with your user (e.g., ec2-user)
+User=root
+
+# Replace with the folder where your bot code lives
+WorkingDirectory=/home/ubuntu
+
+# Command to start the bot (e.g., /usr/bin/python3 bot.py)
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
