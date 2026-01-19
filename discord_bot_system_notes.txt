@@ -1,17 +1,21 @@
 Linux System Notes
 
-When using system files, instead of manual screens, user this command to check bot statuses:
-journalctl -u discord-general -f
+These steps allow you to auto-start the discord bot/s when the system launches.
 
-Create two services files:
+1) Check the the service files: discord-general.service and discord-news.service
+2) Edit the service files if needed. For example, if the username needs to change.
+
+3) Create two services files:
 sudo nano /etc/systemd/system/discord-news.service
 sudo nano /etc/systemd/system/discord-general.service
 
-Note, the contents of the two files can be found in this GitHub directory.
-
-Run these commands to start your two bot services:
+4) Run these commands to start your two bot services:
 sudo systemctl daemon-reload
 sudo systemctl enable discord-general
 sudo systemctl enable discord-news
 sudo systemctl start discord-general
 sudo systemctl start discord-news
+
+NOTE:
+When using system files, instead of manual screens, user this command to check bot statuses:
+journalctl -u discord-general -f
