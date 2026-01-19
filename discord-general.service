@@ -1,0 +1,13 @@
+[Unit]
+Description=Discord General Bot
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/usr/bin/python3 /home/ubuntu/discord-general-bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
