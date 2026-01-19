@@ -10,8 +10,16 @@ User=root
 # Replace with the folder where your bot code lives
 WorkingDirectory=/home/ubuntu
 
-# Command to start the bot (e.g., /usr/bin/python3 bot.py)
-ExecStart=/usr/bin/python3 main.py
+# Create a screen 1, launch bot 1, detach from the screen.
+ExecStart=screen -S discord1
+ExecStart=discord-general-bot.py
+ExecStart=screen -d
+
+# Create a screen 2, launch bot 2, detach from the screen.
+ExecStart=screen -S discord2
+ExecStart=discord-news-bot.py
+ExecStart=screen -d
+
 Restart=always
 RestartSec=5
 
