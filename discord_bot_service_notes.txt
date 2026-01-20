@@ -16,6 +16,14 @@ sudo systemctl enable discord-news
 sudo systemctl start discord-general
 sudo systemctl start discord-news
 
+5) Set a limit for logs
+Open the config file: sudo nano /etc/systemd/journald.conf
+Edit #SystemMaxUse= to be #SystemMaxUse=200M
+Save + Exit
+Run: sudo systemctl restart systemd-journald
+
 NOTE:
 When using system files, instead of manual screens, user this command to check bot statuses:
+journalctl -u discord-general -f
+or
 journalctl -u discord-general -f
