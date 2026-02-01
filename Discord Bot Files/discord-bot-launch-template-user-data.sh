@@ -9,7 +9,7 @@ swapon /swapfile
 echo '/swapfile swap swap defaults 0 0' >> /etc/fstab
 
 # 2. Disable memory-heavy services not needed for a headless bot
-# Stop and purge fwupd (the memory hog you found) and snapd
+# Stop and purge fwupd (the memory hogs) and snapd
 systemctl stop fwupd snapd
 apt-get purge -y fwupd snapd
 apt-get autoremove -y
